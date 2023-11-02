@@ -1,0 +1,21 @@
+{% extends "include.html" %}
+
+{% block content %}
+
+<div class="container bg-dark col-offset-8 col-md-8 rounded border border-white col-xs-8" style="margin-top: 190px;">
+    <br><h1 class="fw-bold display-4 text-white text-center">
+        COLUMNAR TRANSPOSITION
+    </h1><br>
+    <div>
+        <form action="" method="POST">
+{% csrf_token %}
+            
+            <input type="text" name="words" id="" placeholder="ENTER THE WORDS" class="form form-control"><br>
+            <input type="submit" value="ENCRYPT" class="btn btn-primary w-100"><br><br>
+
+        </form>
+    </div>
+    <p class="text-center text-white">{{data}}</p>
+</div>
+
+{% endblock %}
